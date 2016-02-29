@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "marketShare",
+    "style": "scss",
+    "postcss": false
+  }
+}
