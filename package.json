@@ -63,9 +63,11 @@
     "node-sass": "^3.4.2"
   },
   "dependencies": {
+    "chart.js": "^1.0.2",
     "core-js": "^2.0.0",
     "normalize.css": "^3.0.3",
     "react": "^0.14.0",
+    "react-chartjs": "^0.7.3",
     "react-dom": "^0.14.0"
   }
 }

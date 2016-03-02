@@ -1,21 +1,37 @@
 /* Base Application Styles */
 body {
   background: #222;
+  color: white;
+  font: 100%/1 "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-.index img {
-  margin: 40px auto;
-  border-radius: 4px;
-  background: #fff;
-  display: block;
+.container {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  background: #DB5600;
 }
 
-.index .notice {
-  margin: 20px auto;
-  padding: 15px 0;
-  text-align: center;
-  border: 1px solid #000;
-  border-width: 1px 0;
-  background: #666;
-  color: #fff;
+.card {
+  background: rgba(255,255,255,0.1)
+}
+
+.card-columns {
+  -webkit-column-count: 5;
+}
+
+.card {
+  border: 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox {
+  padding-left: 1.25rem;
+}
+
+.checkbox label {
+  padding-left: 0;
 }

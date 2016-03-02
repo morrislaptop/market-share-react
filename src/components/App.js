@@ -1,11 +1,8 @@
-require('normalize.css');
 require('styles/App.css');
 
 import React from 'react';
 import Categories from './Categories';
 import Browsers from './Browsers';
-
-let yeomanImage = require('../images/yeoman.png');
 
 class AppComponent extends React.Component {
 
@@ -14,7 +11,7 @@ class AppComponent extends React.Component {
     this.state = {data: []};
   }
 
-  getData(file) {
+  getData() {
     fetch('https://raw.githubusercontent.com/Fyrd/caniuse/master/region-usage-json/alt-ww.json')
       .then((response) => {
         return response.json();
@@ -25,29 +22,20 @@ class AppComponent extends React.Component {
   }
 
   componentDidMount() {
-
+    this.getData('alt-ww');
   }
 
   render() {
-    this.getData('alt-ww');
-
     return (
       <div className="index container">
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
-        <div className="panel panel-default">
-          <div className="panel-body">
+        <div className="row">
+          <div className="col col-md-12">
             <h1>Select browsers in your matrix</h1>
           </div>
-          <div className="row">
-            <div className="col col-md-2">
-              <h2>Categories</h2>
-              <Categories />
-            </div>
-            <div className="col col-md-10">
-              <h2>Browsers here</h2>
-              <Browsers data={this.state.data} />
-            </div>
+        </div>
+        <div className="row">
+          <div className="col col-md-12 browsers">
+            <Browsers data={this.state.data} />
           </div>
         </div>
       </div>
