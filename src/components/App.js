@@ -1,8 +1,8 @@
 require('styles/App.css');
 
 import React from 'react';
-import Categories from './Categories';
 import Browsers from './Browsers';
+import Report from './Report';
 
 class AppComponent extends React.Component {
 
@@ -38,6 +38,7 @@ class AppComponent extends React.Component {
             <Browsers data={this.state.data} />
           </div>
         </div>
+        <footer><Report /></footer>
       </div>
     );
   }
