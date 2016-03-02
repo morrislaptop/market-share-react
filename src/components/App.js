@@ -3,6 +3,7 @@ require('styles/App.css');
 import React from 'react';
 import Browsers from './Browsers';
 import Report from './Report';
+import CountrySelector from './CountrySelector';
 
 class AppComponent extends React.Component {
 
@@ -31,6 +32,7 @@ class AppComponent extends React.Component {
         <div className="row">
           <div className="col col-md-12">
             <h1>Select browsers in your matrix</h1>
+            <CountrySelector />
           </div>
         </div>
         <div className="row">
