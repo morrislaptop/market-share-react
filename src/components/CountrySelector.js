@@ -2,8 +2,6 @@
 
 import React from 'react';
 
-require('styles//CountrySelector.scss');
-
 class CountrySelector extends React.Component {
   render() {
     return (
